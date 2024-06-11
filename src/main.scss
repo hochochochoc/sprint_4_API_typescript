@@ -1,0 +1,96 @@
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.magicpattern { 
+    width: 100%;
+    height: 100%;
+    background-size: 40%;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M872.5 667Q767 834 607 783t-355.5-60Q56 714 99 521t170.5-332.5Q397 49 567 126t290.5 225.5Q978 500 872.5 667Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%236f74e0%22 d=%22M872.5 667Q767 834 607 783t-355.5-60Q56 714 99 521t170.5-332.5Q397 49 567 126t290.5 225.5Q978 500 872.5 667Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+@include media-breakpoint-down(md) {
+.magicpattern { 
+    width: 100%;
+    height: 100%;
+    background-size: 110%;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M872.5 667Q767 834 607 783t-355.5-60Q56 714 99 521t170.5-332.5Q397 49 567 126t290.5 225.5Q978 500 872.5 667Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%236f74e0%22 d=%22M872.5 667Q767 834 607 783t-355.5-60Q56 714 99 521t170.5-332.5Q397 49 567 126t290.5 225.5Q978 500 872.5 667Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    }
+}
+
+.fa-regular {
+    font-size: 2rem;
+    color:rgb(211, 211, 51);
+}
+
+.fa-regular:hover {
+    color: rgb(157, 157, 207);
+}
+
+.fa-regular:active {
+    color: rgb(175, 175, 205);
+}
+
+.btn-primary {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);  
+}
+
+.btn-primary:hover {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+.btn-primary:active {
+    background-color: rgba(0,0,0,0) !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+
+.btn-secondary {
+    background-color: rgb(211, 211, 51) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(77, 77, 200) !important;
+    color: rgb(157, 157, 207) !important;
+}
+
+.btn-secondary:active {
+    background-color: rgb(78, 132, 195) !important;
+    color: rgb(175, 175, 205) !important;
+}
+
+.btn-rounded {
+    border-radius: 50px;
+    padding: 10px 20px; 
+    position: relative;
+    background-clip: padding-box; 
+}
+
+.btn-rounded::after {
+    content: '';
+    position: absolute;
+    top: -4px; 
+    left: -2.5px; 
+    right: 1px; 
+    bottom: 2px;
+    border: 1.5px solid #000000; 
+    border-radius: 50px;
+    pointer-events: none; 
+    z-index: 2; 
+}
+
+#weather {
+    border-right: 3px solid rgb(0, 0, 0); 
+}
+
+.temperature {
+    font-size: 2rem !important;
+    align-self: flex-end;
+    padding-bottom: 22px;
+}
